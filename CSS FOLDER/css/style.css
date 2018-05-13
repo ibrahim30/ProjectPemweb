@@ -1,0 +1,357 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #263238;
+}
+.header-wrapper {
+    background: url("../img/enak.jpeg");
+    background-size: cover;
+}
+.header {
+    background: rgba(255,255,255,0.7);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.header h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    margin: 0 0 70px;
+}
+.header p {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0 0 70px;
+    color: #424242;
+}
+.header .custom-btn-header {
+    border: 1px solid #2196F3;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #2196F3;
+}
+.header .custom-btn-header:hover {
+    background: #2196F3;
+    color: #FFF;
+}
+
+/*START INTRO*/
+.intro-wrapper {
+  padding : 100px 0px;
+}
+.intro-wrapper .row {
+    margin-bottom: 100px;
+
+}
+.intro-wrapper .row:last-child {
+    margin-bottom: 0;
+}
+.intro-wrapper .icon-home {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.intro-wrapper .icon-home .circle-icon {
+    padding: 50px;
+    border: 3px solid #263238;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    /*transisi yang ketika di klik bundarannya ada efek dengan kecepatan 0.3*/
+}
+.intro-wrapper .icon-home .circle-icon:hover {
+    color: #FFF;
+    background: #2196F3;
+    border: 13px solid #BBDEFB;
+    padding: 40px;
+}
+.intro-wrapper .icon-home span {
+    font-size: 100px;
+}
+.subtitle {
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 70px;
+}
+.intro-wrapper p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+/*START CATEGORY*/
+.category-wrapper {
+    background: center center fixed;
+    background-size: cover;
+    background-image: url("../img/123.jpg");
+}
+.category {
+    padding: 100px;
+    /*background: #ffffffaa;*/
+    background: rgba(255,255,255,0.3)
+}
+.category h1 {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 50px;
+}
+.category ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: none;
+}
+.category ul li {
+    list-style: none;
+    /*membuang list style yang tanda bullets*/
+    display: inline-block;
+    margin: 10px;
+}
+.category ul li a {
+    color: inherit;
+    /*color: rgb(247, 246, 215)*/
+    text-decoration: none;
+    padding: 10px 25px;
+    border: #263238 1px solid;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+.category ul li a .lnr{
+    margin-right: 10px;
+}
+.category ul li a:hover {
+    color: #FFF;
+    background: #2196F3;
+    border: #2196F3 1px solid;
+}
+
+/*START GALLERY*/
+.gallery-wrapper {
+    padding: 100px 0;
+}
+.gallery-wrapper .img-thumbnail {
+    position: relative;
+}
+.gallery-wrapper .img-thumbnail img {
+    width: 100%;
+}
+.gallery-wrapper .img-thumbnail .top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(38, 50, 56, 0);
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    color: #FFF;
+    font-size: 20px;
+}
+.gallery-wrapper .img-thumbnail:hover .top-wrapper {
+    background: rgba(38, 50, 56, 0.5);
+    visibility: visible;
+}
+.gallery-wrapper .img-thumbnail .top-wrapper .text-center {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/*START FOOTER*/
+.footer-top {
+    padding: 40px 0;
+}
+.footer-top .col-footer h3{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.footer-top .col-footer .nav .nav-link {
+    padding: 3px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #78909C;
+}
+.footer-top .col-footer .nav .nav-link:hover {
+    color: #263238;
+}
+.footer-top .col-footer h3.blaa {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+}
+.footer-top .col-footer p {
+    padding: 3px 0;
+    font-size: 16px;
+    color: #78909C;
+}
+.footer-bottom {
+    color: #FFF;
+    padding: 20px 0;
+}
+.footer-bottom .logo img {
+    height: 20px;
+}
+.footer-bottom .copyright {
+    font-size: 14px;
+    color: #607D8B;
+}
+.footer-bottom .copyright a {
+    color: #263238;
+    font-weight: 600;
+}
+
+/* navigasi bar */
+
+.navigasi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9fa7a8;
+}
+
+.navigasi li {
+    float: left;
+}
+.navigasi li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigasi li a:hover:not(.active) {
+    background-color: #111;
+}
+.navigasi li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.navigasi .active {
+    background-color: #01252d;
+}
+
+
+
+/* bagian form */
+.wrapper {
+  background: url("../img/enak.jpeg");
+  background-size: cover;
+
+}
+.wrapper2 {
+  /* background: rgba(255,255,255,0.3); */
+  width: 100%;
+  height: 100vh;
+}
+
+.signup form {
+  width: 450px;
+  background: rgba(121, 121, 122, 0.7);
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 40px 60px 10px 60px;
+}
+
+.signup h2 {
+  font-family: georgia;
+  color: white;
+  margin: 2px;
+  text-align: center;
+  padding: 2px;
+}
+
+.signup input[type="text"],
+.signup input[type="password"] {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.signup button {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  background: #6098f2;
+  color: white;
+}
+
+
+.signup a {
+  margin-left: 130px;
+  font-family: helvatica;
+  font-size: 12px;
+  color: white;
+}
+
+.tengah {
+  text-align: justify;
+}
+
+
+/* KATEGORI CAT */
+.cat-wrapper {
+    background: url("../img/enak.jpeg");
+    background-size: cover;
+}
+.cat {
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* BAGIAN TABEL */
+.tabel table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabel td, th {
+    border: 4px solid black;
+    border-color: black;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabel tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tabel-wrapper {
+    background: url("../img/enak.jpeg");
+    background-size: cover;
+}
+.tabel {
+    background: rgba(255,255,255,0.7);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.tabel .custom-btn-header {
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #2196F3;
+}
+.tabel .custom-btn-header:hover {
+      background: #2196F3;
+      color: #FFF;
+}
